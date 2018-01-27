@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background:pink;color:black;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration-color:black;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1 style="font-family:verdana;">Соня Галевская</h1>
+</header>
+
+<nav class="nav">
+<ul>
+<li> <a style="font-family:verdana;"> Мои ссылки:</a> </li>
+  <li style="text-color:black"><a href="https://vk.com/clumsysonya/">Мой vk</a></li>
+  <li><a href="https://www.instagram.com/clumsysonya/">Мой instagram</a></li>
+  <li><a href="https://www.facebook.com/profile.php?id=100010110283960">Мой fb</a></li>
+  <li><img src="https://m.popkey.co/7aa426/AVj3w.gif" alt="corgi gif" style="width:128px;height:128px;"></li>
+
+</ul>
+</nav>
+
+<article class="article">
+  <h1>Обо мне</h1>
+  <p>Меня зовут Соня. Мне 22 года и я учусь на 3 курсе школы культурологии.</p>
+  <p>Я люблю. бегать и читать интересные книжки. Мне нравятся комиксы (мой любимый - Скотт Пилигрим против всех)</p>
+  <p><strong>Очень люблю корги!!!</strong></p>
+</article>
+
+<footer>Соня Галевская 2018</footer>
+</div>
+
+</body>
+</html>
